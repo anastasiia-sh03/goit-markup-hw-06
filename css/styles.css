@@ -770,9 +770,17 @@ button {
 .footer-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
     gap: 16px;
+}
+
+footer-p {
+    margin-bottom: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
 }
 .input_footer {
     border: 1px solid #fff;
