@@ -95,6 +95,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .nav-list ,
 .contacts {
@@ -131,7 +132,7 @@ button {
     }
     .header-logo {
         padding: 24px 0;
-        margin-right: 120px;
+        margin-right: 76px;
         }
     .nav-list {
         display: flex;
@@ -164,14 +165,14 @@ button {
         position: relative;  
     }
     .nav-link.current::after {
-        content: '';
-        position: absolute;
-        bottom: -1px;
-        left: 0;
+        content: "";
         width: 100%;
         height: 4px;
-        border-radius: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
         background-color: #404bbf;
+        border-radius: 2px;
         }
     .contacts {
         display: block;
@@ -183,11 +184,12 @@ button {
         gap: 12px;
     }
     .contacts-link {
+        padding: 24px 0;
         display: block;
-        font-size: 12px;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
         color: #434455;
-        line-height: 1.17;
-        letter-spacing: 0.04em;
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
@@ -302,7 +304,7 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--iris);
+    background-color: #4D5AE5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,15 +343,23 @@ button {
 .title-text-styles {
     max-width: 216px;
     margin: 0 auto 72px;
+    text-align: center;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
 }
 .title-text-styles ,
 .list-item ,
 .gallery-list {
     font-weight: 700;
+    margin-bottom: 72px;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
 }
 .title-text-styles ,
 .title-text-push {
@@ -441,7 +451,7 @@ button {
     margin-bottom: 8px;
 }
 .item-paragraph {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -464,6 +474,7 @@ button {
 
     .list-item {
         text-align: left;
+    
     }
 }
 @media screen and (min-width: 1158px) {
@@ -531,11 +542,15 @@ button {
     background-color: #FFFFFF;
 }
 .list-item {
+     
+    text-align: center;
+    margin-bottom: 8px;
+    line-height: 1.2;
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-bottom: 8px;
+    text-align: center;
+    color: #2e2f42;
 }
 .item-paragraph-team {
     line-height: 1.5;
@@ -545,7 +560,7 @@ button {
 }
 .section-team-div-inul {
     text-align: center;
-    padding-bottom: 32px 0;
+    padding: 32px 0;
 }
 .section-team-social {
     display: flex;
@@ -564,6 +579,11 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.section-social-li {
+    width: 40px;
+    height: 40px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-social-svg {
@@ -692,6 +712,7 @@ button {
     padding-left: 16px;
     padding-right: 16px;
 }
+
 .footer-text {
     font-weight: 400;
     font-size: 16px;
@@ -712,9 +733,20 @@ button {
     display: flex;
     gap: 16px;
 }
+.footer-social-li {
+    width: 40px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .footer-social-a {
+    width: 100%;
+    height: 100%;
     background-color: #4d5ae5;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-a:hover {
@@ -730,6 +762,9 @@ button {
 }
 .footer-subscribe-svg {
     margin-left: 16px;
+    fill: #f4f4fd;
+}
+.footer-social-svg {
     fill: #f4f4fd;
 }
 .footer-form {
@@ -850,7 +885,7 @@ button {
 
     .logo-part {
         display: inline-block;
-        margin-bottom: 16px;
+
     }
 
 }
