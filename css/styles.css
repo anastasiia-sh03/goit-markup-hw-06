@@ -427,7 +427,9 @@ button {
     margin: 0 auto 72px;
 
 }
-
+.gallery-list {
+    text-transform: capitalize;
+}
 .title-text-styles,
 .gallery-list {
     font-weight: 700;
@@ -435,7 +437,6 @@ button {
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
     color: #2e2f42;
     font-weight: 700;
 }
