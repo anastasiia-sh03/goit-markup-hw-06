@@ -184,7 +184,7 @@ button {
         gap: 12px;
     }
     .contacts-link {
-        padding: 24px 0;
+        
         display: block;
         font-size: 16px;
         line-height: 150%;
@@ -203,7 +203,7 @@ button {
         gap: 40px;
     }
     .contacts-link {
-        padding: 24px 0;
+       
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -317,6 +317,55 @@ button {
         display: none;
     }
 }
+@media screen and (min-width: 768px) {
+    .page-footer-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 72px 24px;
+    }
+
+    .footer-div-one {
+        width: 264px;
+        height: 112px;
+        margin-left: 108px;
+        gap: 16px;
+    }
+
+
+    .foot-div-two {
+        align-self: flex-start;
+    }
+
+    .footer-form {
+        flex-direction: row;
+        gap: 24px;
+        margin-top: 24px;
+    }
+
+    .footer-social {
+        margin-top: 16px;
+    }
+
+    .foot-form-sub {
+        margin-left: 108px;
+        max-width: 453px;
+    }
+
+    .input_footer {
+        width: 264px;
+    }
+
+    .footer-p {
+        margin: 0;
+    }
+
+    .section-team-social {
+        gap: 16px;
+    }
+}
 /* section 1 */
 .title-text {
     max-width: 320px;
@@ -385,7 +434,7 @@ button {
 }
 @media screen and (min-width: 768px) {
     .title-text-styles {
-        max-width: 496px;
+        max-width: 768px;
         margin: 0 auto 36px;
         font-size: 56px;
         line-height: 1.07;
@@ -625,10 +674,15 @@ button {
 .gallery-li:hover .gallery-img-p {
     transform: translateY(0%);
 }
+.gallery-li {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16),
+      0 1px 6px 0 rgba(46, 47, 66, 0.08);}
+      
 .gallery-li:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
             0 1px 1px 0 rgba(46, 47, 66, 0.16),
-            0 1px 6px 0 rgba(46, 47, 66, 0.08);
+   
 }
 .section-gallery {
     padding-top:96px;
@@ -676,9 +730,7 @@ button {
 
     .gallery-li:hover {
         transform: translateY(0%);
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-                0px 1px 1px rgba(46, 47, 66, 0.16),
-                  }
+
 
     .gallery-img-div {
         position: relative;
@@ -693,9 +745,7 @@ button {
         transform: translateY(0%);   
     }
 }
-.gallery-li {
-    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
+
 /*footer*/
 .basement-footer {
     display: flex;
@@ -831,13 +881,12 @@ button {
 }
 @media screen and (min-width: 768px) {
     .page-footer-div {
-        padding-left: 108px;
-        padding-right: 108px;
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        column-gap: 24px;
-        row-gap: 72px;
+        align-items: flex-start;
         justify-content: flex-start;
+        gap: 72px 24px;
     }
 
     .page-foot-div {
@@ -861,31 +910,36 @@ button {
 }
 @media screen and (min-width: 1158px) {
     
-    .page-foot-div {
-        padding: 100px 15px;
-        display: block;
+    .page-footer {
+            max-width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: border-box;
+        }
+    
+        .page-footer-div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: baseline;
+            margin: 0 auto;
+            width: 100%;
+        }
+    
+        .footer-text {
+            margin-top: 16px;
+        }
+    
+        .footer-div-one {
+            display: inline-block;
+            width: 264px;
+        }
+    
 
-    }
-
-    .footer-text {
-        margin-top:16px;
-    }
-
-    .footer-div-one {
-        display: inline-block;
-        width: 264px;
-        margin-right: 120px;
-    }
-
-
-    .footer-p {
-        margin-bottom: 16px;
-    }
-
-    .logo-part {
-        display: inline-block;
-
-    }
+    
+        .logo-part {
+            display: inline-block;
+        }
 
 }
 .modal-overlay {
